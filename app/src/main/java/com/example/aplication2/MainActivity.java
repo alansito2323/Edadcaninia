@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
+//Correcion esteticas
         // Inicialización de vistas y lógica de la aplicación
         EditText edad = findViewById(R.id.edadedit);
         TextView resul = findViewById(R.id.resultadotext);
