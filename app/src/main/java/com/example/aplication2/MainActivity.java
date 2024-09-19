@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
                     String resulstring = "Si fueras perrillo tuvieras " + resull + " años";
                     resul.setText(resulstring);
                 } catch (NumberFormatException e) {
-                    resul.setText("Por favor ingresa un número válido");
+                    Toast.makeText(MainActivity.this,"Por favor ingresa un número válido",Toast.LENGTH_LONG).show();
+
                 }
             }
         });
